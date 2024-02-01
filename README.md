@@ -245,9 +245,8 @@
         const [state, setState] = useState(defaultState);
 
         const toggle = useCallback(() => setState((a) => !a), []);
-        const force = useCallback((a) => setState(a), []);
 
-        return [state, toggle, force];
+        return [state, toggle, setState];
       };
       ```
   5. ## Напишите хук `useDebounce`
