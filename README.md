@@ -9,21 +9,13 @@
           },
           arrow: () => {
             console.log(this);
-          },
-          closure: function() {
-            return () => {
-              console.log(this)
-            }
           }
         };
         const assignedRegular = object.regular;
-        const assignedClosure = object.closure();
 
         object.regular();
-        object.closure()();
         object.arrow();
         assignedRegular();
-        assignedClosure();
         ```
 
       #### Ответ
