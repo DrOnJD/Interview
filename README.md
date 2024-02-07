@@ -37,15 +37,11 @@
               console.log(this, ...args);
             },
           };
-          const regularBinded = object.regular.bind(window.location, [1, 2, 3]);
-          const arrowBinded = object.arrow.bind(window.location, [1, 2, 3]);
 
           object.regular.call(window.location, [1, 2, 3]);
-          object.regular.apply(window.location, [1, 2, 3]);
-          regularBinded();
+          object.regular.bind(window.location, [1, 2, 3])();
           object.arrow.call(window.location, [1, 2, 3]);
-          object.arrow.apply(window.location, [1, 2, 3]);
-          arrowBinded();
+          object.arrow.bind(window.location, [1, 2, 3])();
           ```
 
           #### Ответ
