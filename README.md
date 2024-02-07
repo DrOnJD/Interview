@@ -20,11 +20,9 @@
 
       #### Ответ
       ```js
-      ({ regular: f, array: f, closure: f })
-      ({ regular: f, array: f, closure: f })
+      ({ regular: f, array: f })
       (Window {...})
       (Window {...})
-      ({ regular: f, array: f, closure: f })
       ```
 
         * ### Как можно передать/назначить контекст
