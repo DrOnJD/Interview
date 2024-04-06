@@ -1,4 +1,4 @@
-Sn.,COMMERCIAL UNIT DEFINITION,Floor,COMMERCIAL UNIT DEFINITION,Sub Type, View,Internal Area sq ft,External Area sq ft,"TOTAL UNIT COMMERCIAL AREA sq.ft.", Price AED, Price USD, target_column
+n,Number,Floor,Layout,Type, View, Square, ExSquare,TotalArea, Price AED, Price USD, target_column
 1,A-001,0,1B Convertible,B,Pool,916,521,1 437,1 781 651,488 124,"1 781 651,488 124"
 2,A-002,0,ST Convertible,A,Pool,418,236,654,1 095 252,300 069,"1 095 252,300 069"
 3,A-003,0,ST Convertible,A,Pool,418,240,657,1 095 933,300 256,"1 095 933,300 256"
