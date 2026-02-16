@@ -25,32 +25,32 @@
       (Window {...})
       ```
 
-        * ### Как можно передать/назначить контекст
-          #### Задача
-          Что выведется в консоли?
+      * ### Как можно передать/назначить контекст
+        #### Задача
+        Что выведется в консоли?
+        ```js
+        const object = {
+          regular: function(...args) {
+            console.log(this, ...args);
+          },
+          arrow: (...args) => {
+            console.log(this, ...args);
+          },
+        };
+
+        object.regular.call(window.location, [1, 2, 3]);
+        object.regular.bind(window.location, [1, 2, 3])();
+        object.arrow.call(window.location, [1, 2, 3]);
+        object.arrow.bind(window.location, [1, 2, 3])();
+        ```
+
+        #### Ответ
           ```js
-          const object = {
-            regular: function(...args) {
-              console.log(this, ...args);
-            },
-            arrow: (...args) => {
-              console.log(this, ...args);
-            },
-          };
-
-          object.regular.call(window.location, [1, 2, 3]);
-          object.regular.bind(window.location, [1, 2, 3])();
-          object.arrow.call(window.location, [1, 2, 3]);
-          object.arrow.bind(window.location, [1, 2, 3])();
+          (Location {...}, [1, 2, 3])
+          (Location {...}, 1, 2, 3)
+          (Window {...}, [1, 2, 3])
+          (Window {...}, 1, 2, 3)
           ```
-
-          #### Ответ
-            ```js
-            (Location {...}, [1, 2, 3])
-            (Location {...}, 1, 2, 3)
-            (Window {...}, [1, 2, 3])
-            (Window {...}, 1, 2, 3)
-            ```
 
 
   2.  ## Замыкания
