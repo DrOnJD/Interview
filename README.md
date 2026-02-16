@@ -132,6 +132,7 @@
         ```
 
       * Чему будут равны переменные
+        #### Задача
         ```js
         const doSomеthing = () => Promise.resolve(‘Действие’);
         const doSomеthingElsе = () => ‘Другое действие’;
